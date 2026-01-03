@@ -1,4 +1,32 @@
 # Disaster-relief-routing-optimization
-Constraint-based optimization system for disaster relief helicopter routing, maximizing aid delivery under capacity, distance, and cost constraints using heuristic planning techniques.
+This repository implements an AI-based solution to the Disaster Relief Helicopter Routing Problem, formulated and solved as a search and optimization problem.
 
-An optimization and search-based planning system that allocates disaster relief resources using a fleet of helicopters under real-world constraints such as weight limits, travel range, operational cost, and diminishing returns. The project models the problem as a constrained optimization task and applies heuristic strategies to maximize delivered aid value while minimizing logistical cost.
+The objective is to efficiently allocate a fleet of helicopters to deliver relief packages to flood-affected villages while:
+
+1.Maximizing the total number of people aided
+
+2.Respecting helicopter capacity and operational range constraints
+
+3.Minimizing logistical strain caused by inefficient routing and allocation
+
+The problem is modeled as a state-space search, where each state represents a partial or complete allocation of relief deliveries across helicopters. The solution applies heuristic-guided search techniques to explore feasible allocations and converge toward an optimal or near-optimal solution under given constraints.
+
+# Key Features
+
+1.Formal formulation of a real-world disaster response scenario as a search problem
+
+2.Constraint handling for:
+
+  Helicopter load capacity
+
+  Maximum flight range
+
+  Limited relief package availability
+
+  Optimization of a composite objective function balancing:
+
+3.Aid maximization
+
+4.Logistical efficiency
+
+5.Modular C++ implementation suitable for extension and experimentation
